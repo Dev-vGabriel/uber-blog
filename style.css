@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Parkinsans:wght@500&family=Playwrite+CL+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-white: #FFFFFF;
+    --cor-black: #000000;
+
+    --font-principal: "Poppins", serif;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(209, 206, 206);
+    font-family: var(--font-principal);
+}
+
+header {
+    width: 100%;
+    background-color: #a7a4a4;
+    box-shadow: 1px 1px 1px #000000;
+}
+
+
+
+.links {
+    background-color: var(--cor-black);
+    padding: 2% 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo-title h2 {
+    color: var(--cor-white);
+    font-size: 1.6rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.logo-title span {
+    font-weight: bold;
+}
+
+.logo-title a {
+    color: var(--cor-white);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    font-size: 1rem;
+}
+
+.logo-title a:hover {
+    color: rgb(175, 172, 172);
+}
+
+.figurinhas {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.figurinhas i {
+    color: var(--cor-white);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.figurinhas a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+.figurinhas a:hover i {
+   color: rgb(175, 172, 172);
+}
+
+.figurinhas button {
+    border: none;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    padding: 0rem 0.75rem;
+    color: var(--cor-white);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--font-principal);
+    transition: all 0.3s ease-in-out;
+}
+
+.figurinhas button:hover {
+    background-color: var(--cor-white);
+    color: var(--cor-black);
+}
+
+.link-embaixo {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 3%;
+    align-items: center;
+}
+
+.link-embaixo h2 {
+    color: var(--cor-black);
+    font-size: 1rem;
+}
+
+.link-embaixo i {
+    color: var(--cor-black);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.link-embaixo ul {
+    display: flex;
+    gap: 2.2rem;
+    list-style: none;
+}
+
+
+.link-embaixo ul li a {
+    text-decoration: none;
+    color: #141414;
+    font-size: 1rem;
+    padding: 0.31rem 0.63rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.link-embaixo ul li a:hover {
+    background-color: var(--cor-white);
+    border-radius: 0.31rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main h1 {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 2.3rem;
+    max-width: 750px;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #181818;
+}
+
+img {
+    width: 290px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+main .container {
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-black);
+    margin-top: 3rem;
+    gap: 1rem;
+    padding: 2rem;
+    margin: 3rem 0.31rem 0rem;
+}
+
+main .container h2 {
+    color: var(--cor-white);
+    font-size: 1.5rem;
+    font-weight: 400;
+    max-width: 350px;
+}
+
+main p {
+    margin-top: 3rem;
+    text-align: justify;
+    padding: 0px 5%;
+}
+
+footer {
+    margin-top: 3rem;
+    background-color: #a7a4a4;
+    text-align: center;
+    padding: 0.50rem;
+}
+
+footer p {
+    font-size: 0.80rem;
+}
+
+@media (width < 705px) {
+    .link-embaixo ul {
+        display: none;
+    }
+
+    .link-embaixo i {
+        display: block;
+    }
+
+}
+
+@media (width < 670px) {
+    main .container {
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+    }
+
+    main .container h2 {
+        text-align: center;
+        color: var(--cor-black);
+        font-size: 2rem;
+        border-bottom: 2px solid #000000;
+    }
+
+    main .container img {
+        display: none;
+    }
+
+    .figurinhas a > i,
+    .logo-title a {
+        display: none;
+    }
+
+}
